@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Random</title>
+</head>
+
+<body>
+    <div id="header">
+        随机抽学号
+        <span id="contact">Contact me</span>
+    </div>
+
+    <div id="main" class="clear">
+        <div id="expired" class="list">
+            <div class="list-header">
+                已抽
+                <span id="expired-counter" class="counter">0</span>
+            </div>
+            <ul id="expired-list" class="name-list">
+            </ul>
+        </div>
+        <div id="show-zone">
+            <span id="lucky-name">Next?</span>
+            <button id="generate-next" class="btn">Lucky</button>
+            <button id="restart" class="btn">Restart</button>
+            <ul id="counter-list" class="list">
+                <li>已抽<span class="counter" id="expired-counter-small">0</span></li>
+                <li>未抽<span class="counter" id="fresh-counter-small">0</span></li>
+            </ul>
+        </div>
+        <div id="fresh" class="list">
+            <div class="list-header">
+                未抽
+                <span id="fresh-counter" class="counter">0</span>
+            </div>
+            <ul id="fresh-list" class="name-list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="src/name_list.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>

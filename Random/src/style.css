@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn,
+.btn:visited {
+    cursor: pointer;
+    position: relative;
+
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+
+    overflow: hidden;
+
+    border-width: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: #2ecc71;
+    color: #ecf0f1;
+
+    transition: background-color .2s;
+    transition: box-shadow .2s;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .6);
+}
+
+.btn:active {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+
+.list {
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    position: relative;
+}
+
+.name-list {
+    position: relative;
+    height: 100%;
+    padding-bottom: 50px;
+    overflow-y: auto;
+}
+
+.list li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 1px white solid;
+    border-image: linear-gradient(to right, white, #cccccc, white) 10;
+    transition: background-color ease-in-out 0.12s;
+}
+
+.list li:hover {
+    background-color: #eeeeee;
+}
+
+.list-header {
+    display: block;
+    background: rgba(0, 0, 0, .03);
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 1.3em;
+    border-bottom: 2px #dddddd solid;
+}
+
+.counter {
+    float: right;
+    background-color: #dddddd;
+    margin: 5px 20px 0 0;
+    border: 2px #bbbbbb solid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 7px;
+    font-size: 1.1em;
+}
+
+
+#header {
+    background-color: #3f51b5;
+    height: 50px;
+    font-size: 1.2em;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .6);
+    z-index: 10;
+}
+
+#contact {
+    position: absolute;
+    right: 10px;
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#main {
+    position: relative;
+    height: 85%;
+    margin: 70px auto;
+    width: 90%;
+
+}
+
+#lucky-name {
+    height: 150px;
+    line-height: 150px;
+    display: block;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#generate-next {
+    display: block;
+    font-size: 2.5em;
+    padding: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-height: 550px) {
+    #restart {
+        display: none;
+    }
+}
+
+@media screen and (min-height: 550px) {
+    #restart {
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+#restart {
+    font-size: 1.2em;
+    background-color: #e67e22;
+}
+
+#restart:hover {
+    background-color: #d35400;
+}
+
+#expired {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 3%;
+    width: 27%;
+    /* min-width: 200px; */
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#fresh {
+    vertical-align: top;
+    display: inline-block;
+    width: 27%;
+    /* min-width: 200px; */
+    height: 100%;
+    overflow: hidden;
+}
+
+#show-zone {
+    vertical-align: top;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+
+    #expired,
+    #fresh {
+        display: none !important;
+    }
+
+    #show-zone {
+        width: 100%;
+    }
+
+    #counter-list {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #show-zone {
+        width: 40%;
+    }
+
+    #counter-list {
+        display: none;
+    }
+}
+
+
+
+#counter-list {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+}
+
+#counter-list .counter {
+    display: inline-block;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1em;
+}
