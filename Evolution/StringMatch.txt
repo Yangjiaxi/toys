@@ -1,0 +1,294 @@
+Evolution Algorithm for String Match
+pop size : 1000
+cross rate : 0.2
+mutation rate : 0.01
+DNA size : 23
+Gen 0000 : SG"hb7#i).Fv|S,sP'n esH
+Gen 0001 : SG"hb7#i).Fv|S,sP'n esH
+Gen 0002 : Mzr,<N@K).$o>rSO 'n[esH
+Gen 0003 : *arQ opr`ngH>77 a:nXbZc
+Gen 0004 : ~VAh<waTr.e^2%Pc`VxgBsB
+Gen 0005 : SGrhb_#K).$v>rSO 'ngesH
+Gen 0006 : MarQ(|@Kx.$o>r!= 'nges`
+Gen 0007 : ~GAhbwOi).Vv"r@sh&ngesH
+Gen 0008 : $ar,Cta$DVoven! 3.ngIs<
+Gen 0009 : Mtr,<79r).$o>r,c an,esH
+Gen 0010 : Mtr,<79r).$o>r,c an,esH
+Gen 0011 : Mtr,<79r).$o>r,c an,esH
+Gen 0012 : MGr,<dar)ngo>;,c an,esH
+Gen 0013 : ~)rhbwaPv.nv>FecPanges.
+Gen 0014 : ~)rhbwarv.nv|Fenh'nges`
+Gen 0015 : WGr,+wnr-nevVS7s-_n esp
+Gen 0016 : M>r,<MBOgngv|r,c angesH
+Gen 0017 : W>r,<wargnFL>;,chan esH
+Gen 0018 : W4rh<war)nDvVr,/han esp
+Gen 0019 : War,b|ars.$ver!/P'ngesp
+Gen 0020 : W>r,<wargnFL>;,chan esH
+Gen 0021 : War,b|ar).Dver!c an,esp
+Gen 0022 : War, |ars.$ver!/P'ngesp
+Gen 0023 : War,b|ar).Dver!c an,esp
+Gen 0024 : WGr,p|ar)@evX$Fnhanges.
+Gen 0025 : War,(SaO)nev|r!cha-ges7
+Gen 0026 : har,y7ar)9ever,changes.
+Gen 0027 : Wtr,<wark ev4rechknges 
+Gen 0028 : War,:tar)neveS!cj!nges.
+Gen 0029 : Wtr,<wark ev4rechknges 
+Gen 0030 : War,twar)nes|t&c>@nges.
+Gen 0031 : WGr%\war).eter,changes.
+Gen 0032 : Wtr,<wark@ev4r,ch8nges.
+Gen 0033 : WGr%\war).eter,changes.
+Gen 0034 : SGr,\war)never,changes.
+Gen 0035 : SGr,\war)never,changes.
+Gen 0036 : SGr,\war)never,changes.
+Gen 0037 : WGr,(warkneverech&nges.
+Gen 0038 : Waf,Cwargnev4r7changes.
+Gen 0039 : Waf,Cwargnev4r7changes.
+Gen 0040 : WGr,(warkneverech&nges.
+Gen 0041 : Waf,Cwargnev4r7changes.
+Gen 0042 : Waf,Cwargnev4r7changes.
+Gen 0043 : War,\war+ evecEchanges.
+Gen 0044 : W>r,bwarv.ever7changes.
+Gen 0045 : W>r,bwar&.ever7changes.
+Gen 0046 : War,bwarfneverec|anges.
+Gen 0047 : War,\war+neverechanges.
+Gen 0048 : War,\war+neverechanges.
+Gen 0049 : W>r,Cwar*never7changes.
+Gen 0050 : W>r,Cwar*never7changes.
+Gen 0051 : War,(war+ $verJchanges.
+Gen 0052 : War,pwarDnever&cha|ges.
+Gen 0053 : War,<war).ever,changes.
+Gen 0054 : War,<war).ever,changes.
+Gen 0055 : War,-wargneverechangesC
+Gen 0056 : War,bwar+neEerJchanges.
+Gen 0057 : War,-wargnev%rechanges.
+Gen 0058 : War,\warvneverecQanges.
+Gen 0059 : War,bwar).ever{changes.
+Gen 0060 : War,<war+never}changes.
+Gen 0061 : W|r, warxn'ver changes.
+Gen 0062 : W|r, warxn'ver changes.
+Gen 0063 : War,<war)never,changes.
+Gen 0064 : W|r, warxnwver changes.
+Gen 0065 : War,<war)never,changes.
+Gen 0066 : War,(war;never,changes.
+Gen 0067 : War,(war;never,changes.
+Gen 0068 : War,.war)never,chanAes.
+Gen 0069 : War,Jwar)neverechanges.
+Gen 0070 : War,.war)never,changes.
+Gen 0071 : War,\war)ne1er,changes.
+Gen 0072 : War,\war)ne1er,changes.
+Gen 0073 : War,\wHr+never{changes.
+Gen 0074 : War,Swarvneverlchan2es.
+Gen 0075 : War,(war)never,changes.
+Gen 0076 : War,(war)never,changes.
+Gen 0077 : War,<war)neverUchanges.
+Gen 0078 : War,Jwargnever5changes.
+Gen 0079 : War,(warWnever,}hanges.
+Gen 0080 : War,\warKneeer,changes.
+Gen 0081 : War,(warxneeer,changes.
+Gen 0082 : War,(warWnever:changes.
+Gen 0083 : War,(warWnever:changes.
+Gen 0084 : War,<warTnever!changes.
+Gen 0085 : War,(warxnever,changes.
+Gen 0086 : War,(warNnever:changes.
+Gen 0087 : War,(warWnever:changes.
+Gen 0088 : War,.war+neverUchanges.
+Gen 0089 : War,\war4neverRchanges.
+Gen 0090 : War,<wargnever!changes.
+Gen 0091 : War,Jwar7never,changes.
+Gen 0092 : War,(wargnevergchanges.
+Gen 0093 : War,\warKnever2changes.
+Gen 0094 : War,\warKnever2changes.
+Gen 0095 : War,SwarInever2changes.
+Gen 0096 : War,rwar+never,changes.
+Gen 0097 : War,rwar+never,changes.
+Gen 0098 : War,rwar+never,changes.
+Gen 0099 : War,)war+never.changes.
+Gen 0100 : War,<war,never,changes.
+Gen 0101 : War,\wargnevertchanges.
+Gen 0102 : War,ywar)never,changes.
+Gen 0103 : War,rwar+never:changes.
+Gen 0104 : War,\war)neverochanges.
+Gen 0105 : War, warKnever@changes.
+Gen 0106 : War,dwargnever{changes.
+Gen 0107 : War,dwargnever{changes.
+Gen 0108 : War,rwargneverychanges.
+Gen 0109 : War,\wargnever,changes.
+Gen 0110 : War,<warLnever:changes.
+Gen 0111 : War,JdarTnever changes.
+Gen 0112 : War,\warJnever,changes.
+Gen 0113 : War,Gwargneverychanges.
+Gen 0114 : War,%war7never{changes.
+Gen 0115 : War,1warsnever;changes.
+Gen 0116 : War,mwar)never:changes.
+Gen 0117 : War,\wardnever,changes.
+Gen 0118 : War,dwar+neveruchanges.
+Gen 0119 : War,\warJnever{changes.
+Gen 0120 : War,rwarfnever{changes.
+Gen 0121 : War,%war7never=changes.
+Gen 0122 : War,%war7never=changes.
+Gen 0123 : War,\warfnever{changes.
+Gen 0124 : War,WwarJnever:changes.
+Gen 0125 : War,Wwar+never4changes.
+Gen 0126 : War,zwargnever{changes.
+Gen 0127 : War,zwargnever{changes.
+Gen 0128 : War,Bwar+neverzchanges.
+Gen 0129 : War,Swarlnever changes.
+Gen 0130 : War,Swarlnever changes.
+Gen 0131 : War,Swarlnever changes.
+Gen 0132 : War,Swarlnever changes.
+Gen 0133 : War,mwar)neverVchanges.
+Gen 0134 : 'ar,(gar never changes.
+Gen 0135 : War,(war)neveN changes.
+Gen 0136 : War,(warqnever changes.
+Gen 0137 : War,8waH never changes.
+Gen 0138 : War,8waH never changes.
+Gen 0139 : War,Xwargnever changes.
+Gen 0140 : War,(war)neveN changes.
+Gen 0141 : 'ar,(war never changes.
+Gen 0142 : 'ar,mwar never changes.
+Gen 0143 : War,mwar never change3.
+Gen 0144 : War,.warlnever changes.
+Gen 0145 : 'ar,(war never changes.
+Gen 0146 : 'ar,<war never changes.
+Gen 0147 : 'ar,<war never changes.
+Gen 0148 : 'ar,<war never changes.
+Gen 0149 : War,\Kar never changes.
+Gen 0150 : War,\Kar never changes.
+Gen 0151 : War,@war never{changes.
+Gen 0152 : War,qwar nevercchanges.
+Gen 0153 : War,@war never{changes.
+Gen 0154 : War,@war never{changes.
+Gen 0155 : War,1wargnever changes.
+Gen 0156 : War,@war neverDchanges.
+Gen 0157 : War,1wargnever changes.
+Gen 0158 : War,1wargnever changes.
+Gen 0159 : War,1wargnever changes.
+Gen 0160 : War,\war)never changes.
+Gen 0161 : War,Zwarunever changes.
+Gen 0162 : War,@war never{changes.
+Gen 0163 : War,\war)never changes.
+Gen 0164 : War,\war)never changes.
+Gen 0165 : War,@war never{changes.
+Gen 0166 : War,<wargnever changes.
+Gen 0167 : War,<wargnever changes.
+Gen 0168 : War,<wargnever changes.
+Gen 0169 : War,<war never changesR
+Gen 0170 : War,<war never changesR
+Gen 0171 : War,Lwar+never changes.
+Gen 0172 : War,<wargnever changes.
+Gen 0173 : War,*war)never changes.
+Gen 0174 : Wara.war never changes.
+Gen 0175 : War,xwar{never changes.
+Gen 0176 : War,Bwardnever changes.
+Gen 0177 : War,.warWnever changes.
+Gen 0178 : War,.warWnever changes.
+Gen 0179 : War,.war)never changes.
+Gen 0180 : War,qwar)never changes.
+Gen 0181 : 0ar,Gwar never changes.
+Gen 0182 : 0ar,Gwar never changes.
+Gen 0183 : 0ar,Gwar never changes.
+Gen 0184 : War,.war neverqchanges.
+Gen 0185 : 0ar,Gwar never changes.
+Gen 0186 : War,Gwar nxver changes.
+Gen 0187 : War,Gwar nxver changes.
+Gen 0188 : War,<wargnever changes.
+Gen 0189 : War,<wargnever changes.
+Gen 0190 : War,Gwar nxver changes.
+Gen 0191 : War,PwarKnever changes.
+Gen 0192 : War,Gwar nxver changes.
+Gen 0193 : War,Gwar nxver changes.
+Gen 0194 : War,PwarKnever changes.
+Gen 0195 : War,Gwar nxver changes.
+Gen 0196 : War,ywar)never changes.
+Gen 0197 : War,PwarKnever changes.
+Gen 0198 : War,.war never chaEges.
+Gen 0199 : War,-warKnever changes.
+Gen 0200 : War,>war+never changes.
+Gen 0201 : War,xwar never&changes.
+Gen 0202 : War,Nwar never changes.
+Gen 0203 : War,Wwarrnever changes.
+Gen 0204 : War,(war neverzchanges.
+Gen 0205 : War,(war neverzchanges.
+Gen 0206 : WaJ,.war never changes.
+Gen 0207 : War,xwar never changes;
+Gen 0208 : War,<war)never changes.
+Gen 0209 : War,.war never changes.
+Gen 0210 : War,.war never changes.
+Gen 0211 : War,Bwar never changes.
+Gen 0212 : War,Bwar never changes.
+Gen 0213 : War,Twar never cha:ges.
+Gen 0214 : War,ywar never changes.
+Gen 0215 : War,ywar never changes.
+Gen 0216 : War,ywar never changes.
+Gen 0217 : War,ywar never changes.
+Gen 0218 : War,ywar never changes.
+Gen 0219 : War,ywar never changes.
+Gen 0220 : War,ywar never changes.
+Gen 0221 : War,Nwar2never changes.
+Gen 0222 : War,Cwar never hhanges.
+Gen 0223 : War,<war never changes.
+Gen 0224 : War,BwarWnever changes.
+Gen 0225 : War,Cwar never changes.
+Gen 0226 : War?Cwar never changes.
+Gen 0227 : War?Cwar never changes.
+Gen 0228 : W\r,.war never changes.
+Gen 0229 : War,BwarWnever changes.
+Gen 0230 : War,.war nevJr changes.
+Gen 0231 : War,.war never changes.
+Gen 0232 : War,.war never changes.
+Gen 0233 : War,Bwar never changes.
+Gen 0234 : War,Uwar never changes.
+Gen 0235 : War,xwar never changes.
+Gen 0236 : War,Lwar never changes.
+Gen 0237 : War,uwar never changes.
+Gen 0238 : War,xwar never changes.
+Gen 0239 : War,Lwar never changes.
+Gen 0240 : War,Lwar never changes.
+Gen 0241 : War,xwar never changes.
+Gen 0242 : War,nwar never changes.
+Gen 0243 : War,Lwar never changes.
+Gen 0244 : War,Lwar never changes.
+Gen 0245 : War,~war never changes.
+Gen 0246 : War,Wwae never changes.
+Gen 0247 : War,xwar never changes.
+Gen 0248 : War,;war never changes*
+Gen 0249 : War,Uwar never changes.
+Gen 0250 : War,Uwar never changes.
+Gen 0251 : War,(war never,changes.
+Gen 0252 : War,.war never change(.
+Gen 0253 : War,<waS never changes.
+Gen 0254 : War,^war never changes.
+Gen 0255 : War,^war never changes.
+Gen 0256 : War,^war never changes.
+Gen 0257 : War,.war never changes.
+Gen 0258 : War,.war never changes.
+Gen 0259 : War,.war never changes.
+Gen 0260 : War,.war never changes.
+Gen 0261 : War,.war never changes.
+Gen 0262 : War,.war never changes.
+Gen 0263 : War,;war never changes.
+Gen 0264 : War,;war never changes.
+Gen 0265 : War,owar never changes.
+Gen 0266 : War,;war never changes.
+Gen 0267 : War,owar never changes.
+Gen 0268 : War,owar never changes.
+Gen 0269 : War,kwar never changes.
+Gen 0270 : War,owar never changes.
+Gen 0271 : War,owar never changes.
+Gen 0272 : War,owar never changes.
+Gen 0273 : War,.war never changes.
+Gen 0274 : War,Twar never changes.
+Gen 0275 : War,Gwar never changes.
+Gen 0276 : War,Twar never changes.
+Gen 0277 : War,Twar never changes.
+Gen 0278 : War,Twar never changes.
+Gen 0279 : War,(war never changes.
+Gen 0280 : War,(war never changes.
+Gen 0281 : War,.war never changes.
+Gen 0282 : War,(war never changes.
+Gen 0283 : War,(war never changes.
+Gen 0284 : War,(war never changes.
+Gen 0285 : War,(war never changes.
+Gen 0286 : War,owar never changes.
+Gen 0287 : War,.war never changes.
+Gen 0288 : War, war never changes.
