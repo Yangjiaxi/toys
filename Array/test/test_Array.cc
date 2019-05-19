@@ -136,3 +136,69 @@ TEST_CASE("Method::splice")
 
     REQUIRE(a.splice(1).data == vector<string>{"parrot"});
 }
+
+TEST_CASE("Method::from")
+{
+    REQUIRE(one().from().data == one().data);
+}
+
+TEST_CASE("Method::concat")
+{
+    Array<int> a{1, 2, 3};
+    Array<int> b{4, 5, 6};
+    Array<int> c{7, 8, 9};
+    REQUIRE(a.concat(b).concat(c).data == vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9});
+}
+
+TEST_CASE("Method::filter")
+{
+    Array<string> a{"spray", "limit", "elite", "exuberant", "destruction", "present"};
+    auto flt = [](const string s) { return s.length() > 6; };
+    auto res = a.filter(flt);
+    REQUIRE(res.data == vector<string>{"exuberant", "destruction", "present"});
+}
+
+TEST_CASE("Method::map")
+{
+    auto mpr = [](int a) { return a * a; };
+    auto res = one().map<int>(mpr);
+    REQUIRE(res.data == vector<int>{1, 4, 9, 16, 25});
+}
+
+TEST_CASE("Method::slice")
+{
+    Array<string> a{"ant", "bison", "camel", "duck", "elephant"};
+    REQUIRE(a.slice(2).data == vector<string>{"camel", "duck", "elephant"});
+    REQUIRE(a.slice(2, 4).data == vector<string>{"camel", "duck"});
+    REQUIRE(a.slice(1, 5).data == vector<string>{"bison", "camel", "duck", "elephant"});
+}
+TEST_CASE("Method::reduce")
+{
+    Array<int> a{1, 2, 3, 4};
+    auto reducer = [](int acc, int cur) -> int { return acc + cur; };
+    REQUIRE(a.reduce<int>(reducer, 0) == 10);
+    REQUIRE(a.reduce<int>(reducer, 5) == 15);
+}
+
+TEST_CASE("Method::reduceRight")
+{
+    Array<Array<int>> a{{0, 1}, {2, 3}, {4, 5}};
+    auto rightReducer = [](Array<int> acc, Array<int> cur) { return acc.concat(cur); };
+    auto res = a.reduceRight<Array<int>>(rightReducer, Array<int>{});
+    REQUIRE(res.data == vector<int>{4, 5, 2, 3, 0, 1});
+}
+
+TEST_CASE("Method::forEach")
+{
+    auto a = one();
+    vector<int> res;
+    a.forEach([&res](int a) { res.push_back(a * 2); });
+    REQUIRE(res == vector<int>{2, 4, 6, 8, 10});
+}
+
+TEST_CASE("Method::join")
+{
+    REQUIRE(one().join() == "1, 2, 3, 4, 5");
+    REQUIRE(one().join("") == "12345");
+    REQUIRE(one().join("-") == "1-2-3-4-5");
+}
