@@ -17,11 +17,14 @@ int main()
 
     Array<int> b({1, 2, 3, 4, 5});
     b.output(cout);
-    cout << b.reduce<int>([](int res, const int el) { return res + el; }, 0) << endl;
+    cout << b.reduce<int>([](int res, const int el) { return res + el; }, 0)
+         << endl;
 
-    cout << a.reduce<string>([](string res, const string& el) { return res + el + ' '; }, "")
+    cout << a.reduce<string>(
+                [](string res, const string& el) { return res + el + ' '; }, "")
          << endl
-         << a.reduceRight<string>([](string res, const string& el) { return res + el + ' '; }, "")
+         << a.reduceRight<string>(
+                [](string res, const string& el) { return res + el + ' '; }, "")
          << endl;
 
     Array<size_t> l;

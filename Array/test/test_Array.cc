@@ -92,7 +92,8 @@ TEST_CASE("Method::indexOf/lastIndexOf")
 TEST_CASE("Method::copyWithin")
 {
     Array<char> a{'a', 'b', 'c', 'd', 'e'};
-    REQUIRE(a.copyWithin(0, 3, 4).data == vector<char>{'d', 'b', 'c', 'd', 'e'});
+    REQUIRE(a.copyWithin(0, 3, 4).data ==
+            vector<char>{'d', 'b', 'c', 'd', 'e'});
     REQUIRE(a.copyWithin(1, 3).data == vector<char>{'d', 'd', 'e', 'd', 'e'});
 }
 
@@ -124,7 +125,8 @@ TEST_CASE("Method::splice")
     REQUIRE(a.splice(2, 0, {"drum"}).data ==
             vector<string>{"angel", "clown", "drum", "mandarin", "sturgeon"});
 
-    REQUIRE(a.splice(3, 1).data == vector<string>{"angel", "clown", "drum", "sturgeon"});
+    REQUIRE(a.splice(3, 1).data ==
+            vector<string>{"angel", "clown", "drum", "sturgeon"});
 
     REQUIRE(a.splice(2, 1, {"trumpet"}).data ==
             vector<string>{"angel", "clown", "trumpet", "sturgeon"});
@@ -132,7 +134,8 @@ TEST_CASE("Method::splice")
     REQUIRE(a.splice(0, 2, {"parrot", "anemone", "blue"}).data ==
             vector<string>{"parrot", "anemone", "blue", "trumpet", "sturgeon"});
 
-    REQUIRE(a.splice(a.size() - 3, 2).data == vector<string>{"parrot", "anemone", "sturgeon"});
+    REQUIRE(a.splice(a.size() - 3, 2).data ==
+            vector<string>{"parrot", "anemone", "sturgeon"});
 
     REQUIRE(a.splice(1).data == vector<string>{"parrot"});
 }
@@ -147,12 +150,14 @@ TEST_CASE("Method::concat")
     Array<int> a{1, 2, 3};
     Array<int> b{4, 5, 6};
     Array<int> c{7, 8, 9};
-    REQUIRE(a.concat(b).concat(c).data == vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9});
+    REQUIRE(a.concat(b).concat(c).data ==
+            vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9});
 }
 
 TEST_CASE("Method::filter")
 {
-    Array<string> a{"spray", "limit", "elite", "exuberant", "destruction", "present"};
+    Array<string> a{"spray",     "limit",       "elite",
+                    "exuberant", "destruction", "present"};
     auto flt = [](const string s) { return s.length() > 6; };
     auto res = a.filter(flt);
     REQUIRE(res.data == vector<string>{"exuberant", "destruction", "present"});
@@ -170,7 +175,8 @@ TEST_CASE("Method::slice")
     Array<string> a{"ant", "bison", "camel", "duck", "elephant"};
     REQUIRE(a.slice(2).data == vector<string>{"camel", "duck", "elephant"});
     REQUIRE(a.slice(2, 4).data == vector<string>{"camel", "duck"});
-    REQUIRE(a.slice(1, 5).data == vector<string>{"bison", "camel", "duck", "elephant"});
+    REQUIRE(a.slice(1, 5).data ==
+            vector<string>{"bison", "camel", "duck", "elephant"});
 }
 TEST_CASE("Method::reduce")
 {
@@ -183,7 +189,9 @@ TEST_CASE("Method::reduce")
 TEST_CASE("Method::reduceRight")
 {
     Array<Array<int>> a{{0, 1}, {2, 3}, {4, 5}};
-    auto rightReducer = [](Array<int> acc, Array<int> cur) { return acc.concat(cur); };
+    auto rightReducer = [](Array<int> acc, Array<int> cur) {
+        return acc.concat(cur);
+    };
     auto res = a.reduceRight<Array<int>>(rightReducer, Array<int>{});
     REQUIRE(res.data == vector<int>{4, 5, 2, 3, 0, 1});
 }
