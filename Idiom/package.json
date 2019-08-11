@@ -1,0 +1,22 @@
+{
+  "name": "idiom",
+  "version": "1.0.0",
+  "description": "Idiom badass.",
+  "main": "index.js",
+  "author": "Yang",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "fs": "^0.0.1-security",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
